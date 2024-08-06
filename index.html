@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Basics</title>
+    <!-- external css -->
+
+    <link href="index.css" rel="stylesheet">
+    <!-- embedded css -->
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <a id="pseudo" href="#">Dented code</a>
+        <p id="element">Bhagwan</p>
+        <h1> Html Form Basics</h1>
+
+        <!--form elements-->
+        <form>
+            <!--input elements-->
+            <!--input emelent | type=text-->
+            <p>
+                <label style="color:red; font-weight:bolder;" for="name">Name: </label>
+                <input required />
+            </p>
+
+            <!--input emelent | type=number-->
+
+            <p>
+                <label id="phone_number" for="phone_number">Phone Number: </label>
+                <input id="phone_number" name="phone_number" type="number" min="0" />
+                <!--validation attributes |min | max-->
+
+            </p>
+
+            <!--input element\type=email-->
+            <P>
+                <label id="email" for="email">Email</label>
+                <input id="Email" type="email" />
+            </P>
+            <!--input element\type=password-->
+            <P>
+                <label id="password" for="password">Password</label>
+                <input id="password" type="password" />
+            </P>
+            <!--input element\type=date-->
+            <P>
+                <label for="date">DOB</label>
+                <input id="date" type="date" />
+            </P>
+            <!--input element\type=time-->
+            <P>
+                <label for="time">Time</label>
+                <input id="time" type="time" />
+            </P>
+            <!--input element\type=url-->
+            <P>
+                <label for="url">LinkedIn</label>
+                <input id="url" type="url" />
+            </P>
+            <!--input element\type=color-->
+            <P>
+                <label for="color">Color</label>
+                <input id="color" type="color" />
+            </P>
+            <!--input element\type=file-->
+            <P>
+                <label for="file">File</label>
+                <input id="file" type="file" />
+            </P>
+            <!--input element\type= multiple-->
+            <P>
+                <label for="file">File</label>
+                <input id="file" type="file" multiple />
+            </P>
+            <!--radio buttons-->
+            <input id="female" type="radio" name="gender" />
+            <label for="female">Female</label>
+            <input id="male" type="radio" name="gender" />
+            <label for="male">Male</label>
+            <input id="other" type="radio" name="gender" />
+            <label for="other">other</label>
+            <br /> <br />
+
+            <!--chechboxes-->
+            <input type="Checkbox" name="language" id="html" />
+            <label for="html">HTML</label>
+            <input type="Checkbox" name="language" id="css" />
+            <label for="CSS">CSS</label>
+            <input type="Checkbox" name="language" id="js" />
+            <label for="JAVASCRIPT">Javascript</label>
+
+            <!--text area-->
+            <p>
+                <label for="about">About You</label>
+                <textarea id="about" rows="7" cols="30"> </textarea>
+            </p>
+
+            <!--select-->
+            <p>
+                <select id="lang">
+                    <option value="">-- select Fav Programming Language</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                </select>
+            </p>
+
+            <!--multi-select-->
+            <p>
+                <select id="lang" multiple>
+                    <option value="">-- select Fav Programming Language</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                </select>
+            </p>
+
+
+            <!--button-->
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </center>
+
+
+</body>
+
+</html>
